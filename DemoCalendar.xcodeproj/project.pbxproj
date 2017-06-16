@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		71B311631EF223480094699D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B311621EF223480094699D /* AppDelegate.swift */; };
-		71B311651EF223480094699D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B311641EF223480094699D /* ViewController.swift */; };
+		71B311651EF223480094699D /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B311641EF223480094699D /* CalendarVC.swift */; };
 		71B311681EF223480094699D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B311661EF223480094699D /* Main.storyboard */; };
 		71B3116A1EF223480094699D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B311691EF223480094699D /* Assets.xcassets */; };
 		71B3116D1EF223480094699D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B3116B1EF223480094699D /* LaunchScreen.storyboard */; };
+		71B311791EF22BA10094699D /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B311781EF22BA10094699D /* CalendarCell.swift */; };
+		71B3117B1EF37B140094699D /* CalendarCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3117A1EF37B140094699D /* CalendarCell2.swift */; };
+		CDE4C301C03902726EF4CC93 /* Pods_DemoCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BABA6FB6FB999A32452A57 /* Pods_DemoCalendar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		71B3115F1EF223480094699D /* DemoCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B311621EF223480094699D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71B311641EF223480094699D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71B311641EF223480094699D /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		71B311671EF223480094699D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71B311691EF223480094699D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71B3116C1EF223480094699D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71B3116E1EF223480094699D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71B311781EF22BA10094699D /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		71B3117A1EF37B140094699D /* CalendarCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell2.swift; sourceTree = "<group>"; };
+		7A7942BB4E0BED4421826FAF /* Pods-DemoCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCalendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCalendar/Pods-DemoCalendar.release.xcconfig"; sourceTree = "<group>"; };
+		B684C1145043A816C69E2B26 /* Pods-DemoCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCalendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCalendar/Pods-DemoCalendar.debug.xcconfig"; sourceTree = "<group>"; };
+		F0BABA6FB6FB999A32452A57 /* Pods_DemoCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE4C301C03902726EF4CC93 /* Pods_DemoCalendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				71B311611EF223480094699D /* DemoCalendar */,
 				71B311601EF223480094699D /* Products */,
+				BA70BF601FBD6FC02D4D255C /* Pods */,
+				944F5E3CC91C3DEBF9E72A48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +65,65 @@
 		71B311611EF223480094699D /* DemoCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				71B311771EF22B740094699D /* Controller */,
+				71B311761EF22B700094699D /* View */,
+				71B311751EF22B680094699D /* Model */,
+				71B311741EF22B5F0094699D /* Extension */,
 				71B311621EF223480094699D /* AppDelegate.swift */,
-				71B311641EF223480094699D /* ViewController.swift */,
 				71B311661EF223480094699D /* Main.storyboard */,
 				71B311691EF223480094699D /* Assets.xcassets */,
 				71B3116B1EF223480094699D /* LaunchScreen.storyboard */,
 				71B3116E1EF223480094699D /* Info.plist */,
 			);
 			path = DemoCalendar;
+			sourceTree = "<group>";
+		};
+		71B311741EF22B5F0094699D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		71B311751EF22B680094699D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		71B311761EF22B700094699D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71B311781EF22BA10094699D /* CalendarCell.swift */,
+				71B3117A1EF37B140094699D /* CalendarCell2.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		71B311771EF22B740094699D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				71B311641EF223480094699D /* CalendarVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		944F5E3CC91C3DEBF9E72A48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0BABA6FB6FB999A32452A57 /* Pods_DemoCalendar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA70BF601FBD6FC02D4D255C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B684C1145043A816C69E2B26 /* Pods-DemoCalendar.debug.xcconfig */,
+				7A7942BB4E0BED4421826FAF /* Pods-DemoCalendar.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71B311711EF223480094699D /* Build configuration list for PBXNativeTarget "DemoCalendar" */;
 			buildPhases = (
+				2458B34DB0A7A8F171CB3092 /* [CP] Check Pods Manifest.lock */,
 				71B3115B1EF223480094699D /* Sources */,
 				71B3115C1EF223480094699D /* Frameworks */,
 				71B3115D1EF223480094699D /* Resources */,
+				83BABA1B27F8B0CCF8D84DDA /* [CP] Embed Pods Frameworks */,
+				FB82B0999B979630BA561C99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +197,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2458B34DB0A7A8F171CB3092 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83BABA1B27F8B0CCF8D84DDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoCalendar/Pods-DemoCalendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB82B0999B979630BA561C99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoCalendar/Pods-DemoCalendar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		71B3115B1EF223480094699D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71B311651EF223480094699D /* ViewController.swift in Sources */,
+				71B311651EF223480094699D /* CalendarVC.swift in Sources */,
+				71B311791EF22BA10094699D /* CalendarCell.swift in Sources */,
+				71B3117B1EF37B140094699D /* CalendarCell2.swift in Sources */,
 				71B311631EF223480094699D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +376,7 @@
 		};
 		71B311721EF223480094699D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B684C1145043A816C69E2B26 /* Pods-DemoCalendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9M89LZG9KX;
@@ -274,6 +390,7 @@
 		};
 		71B311731EF223480094699D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A7942BB4E0BED4421826FAF /* Pods-DemoCalendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9M89LZG9KX;
@@ -304,6 +421,7 @@
 				71B311731EF223480094699D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
